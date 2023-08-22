@@ -13,6 +13,9 @@
 
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    
+    <!-- Sweetalert2 -->
+    <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -87,7 +90,7 @@
                 <i class="uil uil-facebook-f"></i>
               </a>
 
-              <a href="https://discord.com/users/942997631519572059" target="_blank" class="home__social-icon">
+              <a href="https://discord.com/users/1125624785083302000" target="_blank" class="home__social-icon">
                 <i class="uil uil-discord"></i>
               </a>
 
@@ -102,7 +105,7 @@
 
             <div class="home__data">
               <h1 class="home__title">Hello, I'am Milan</h1>
-              <h3 class="home__subtitle">Front-end Web Developer</h3>
+              <h3 class="home__subtitle">UI UX Designer</h3>
               <p class="home__description">Howdy! Iam Milan, a Front-end Web Developer, Roblox Animator and 3D Modeller</p>
               <a href="#contact" class="button button--flex">
                 Contact Me <i class="uil uil-message button__icon"></i>
@@ -129,7 +132,7 @@
 
           <div class="about__data">
             <p class="about__description">
-              Hi! Iam Milan, Roblox Animator, Web Developer and 3D Modeller. You can contact me in discord, add me on discord: itzme_milan
+              Hi! Iam Milan, Roblox Animator, Web Developer, UI UX Designer and 3D Modeller. You can add me on discord: milanliz
             </p>
 
             <div class="about__info">
@@ -201,12 +204,11 @@
                   </div>
                 </div>
                 <!-- ^ CSS ^ -->
-
                 <!-- v JavaScript v -->
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__number">55%</span>
+                    <span class="skills__number">50%</span>
                   </div>
                   <div class="skills__bar">
                     <span class="skills__percentage skills_js"></span>
@@ -219,13 +221,13 @@
           </div>
 
           <div>
-            <!-- vvv Designer vvv -->
+            <!-- vvv Design vvv -->
             <div class="skills__content skills__close">
               <div class="skills__header">
                 <i class="uil uil-edit-alt skills__icon"></i>
                 
                 <div>
-                  <h1 class="skills__titles">Designer</h1>
+                  <h1 class="skills__titles">Design</h1>
                   <!-- <span class="skills__subtitle">Lorem ipsum dolor sit amet.</span> -->
                 </div>
 
@@ -250,7 +252,7 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">Photoshop</h3>
-                    <span class="skills__number">50%</span>
+                    <span class="skills__number">30%</span>
                   </div>
                   <div class="skills__bar">
                     <span class="skills__percentage skills_photoshop"></span>
@@ -259,7 +261,7 @@
                 <!-- ^ Photoshop ^ -->
               </div>
             </div>
-            <!-- ^^^ Designer ^^^ -->
+            <!-- ^^^ Design ^^^ -->
           </div>
 
           <div>
@@ -480,7 +482,7 @@
 
               <div>
                 <h3 class="contact__title">Add Me On Discord</h3>
-                <span class="contact__subtitle">itzme_milan</span>
+                <span class="contact__subtitle">milanliz</span>
               </div>
             </div>
 
@@ -505,29 +507,39 @@
             </div>
           </div>
 
-          <form action="#" class="contact__form grid">
+          <form action="#" class="contact__form grid" name="submit-to-google-sheet">
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <label for="input-name contact__label">Name</label>
-                <input type="text" class="contact__input" id="input-name">
+                <input type="text" class="contact__input" autocomplete="off" id="input-name" name="name" required>
               </div>
               <div class="contact__content">
                 <label for="input-email contact__label">Email</label>
-                <input type="email" class="contact__input" id="input-email">
+                <input type="email" class="contact__input" autocomplete="off" id="input-email" name="email" required>
               </div>
             </div>
 
             <div class="contact__content">
               <label for="input-message contact__label">Message</label>
-              <textarea id="input-message" cols="0" rows="7" class="contact__input"></textarea>
+              <textarea id="input-message" cols="0" rows="7" autocomplete="off" class="contact__input" name="message" required></textarea>
             </div>
 
+            <!-- Submit Button -->
             <div>
-              <a href="#" class="button button--flex">
+              <button href="#" type="submit" class="button button--flex submit-button btn-send">
                 Send Message
                 <i class="uil uil-message button__icon"></i>
-              </a>
+              </button>
             </div>
+
+            <!-- Loading Submit Button -->
+            <div>
+              <button href="#" class="button button--flex submit-button btn-loading none">
+                Send Message
+                <i class="uil uil-spinner-alt button__loading__icon"></i>
+              </button>
+            </div>
+
           </form>
       </section>
     </main>
@@ -570,7 +582,7 @@
               <i class="uil uil-github"></i>
             </a>
 
-            <a href="https://discord.com/users/942997631519572059" target="_blank" class="footer__social">
+            <a href="https://discord.com/users/1125624785083302000" target="_blank" class="footer__social">
               <i class="uil uil-discord"></i>
             </a>
           </div>
@@ -587,6 +599,12 @@
 
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- ============ SUBMIT TO GOOGLE SHEET ==============-->
+    <script src="assets/js/submit-to-google-sheet.js"></script>
+
+    <!--================== Sweetalert2 =================== -->
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
