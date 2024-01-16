@@ -164,7 +164,7 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   padding-bottom: 1rem;
 }
 
@@ -398,17 +398,17 @@ img {
 }
 
 @keyframes pulse {
-	0% {
+  0% {
     opacity: 100%;
-	}
+  }
 
-	50% {
+  50% {
     opacity: 80%;
-	}
+  }
 
-	100% {
+  100% {
     opacity: 100%;
-	}
+  }
 }
 
 @keyframes spin {
@@ -559,15 +559,15 @@ img {
 }
 
 .skills_js {
-  width: 50%;
+  width: 30%;
 }
 
 .skills_figma {
-  width: 80%;
+  width: 85%;
 }
 
 .skills_photoshop {
-  width: 30%;
+  width: 20%;
 }
 
 .skills__close .skills__list {
