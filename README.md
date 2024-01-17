@@ -1,13 +1,15 @@
 ![preview img](/screenshot.png)
 
 # My Portfolio Website
-### <a href="https://milanliz.netlify.app/" target="_blank">Website Link (click here)</a>
+
+<br>
+
+<a href="https://milanliz.netlify.app/" style="padding: .8rem 5rem; background-color: white; color: black; order-radius: 4px;" target="_blank">Demo</a>
 
 <br>
 <hr> <!-- Line -->
-<br>
 
-Using
+## Tech Stacks:
 
 > <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">HTML</a>
 
