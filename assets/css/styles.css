@@ -484,8 +484,17 @@ img {
 }
 
 /*==================== SKILLS ====================*/
-.skills__container {
-  row-gap: 0;
+
+.skills-icons {
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: 300ms;
+}
+
+.skills-icons:hover {
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.05);
+  transition: 300ms;
 }
 
 .skills__header {
@@ -960,7 +969,6 @@ img {
   }
 
   .about__container,
-  .skills__container,
   .portfolio__content,
   .contact__container,
   .footer__container {
